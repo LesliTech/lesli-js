@@ -42,33 +42,33 @@ class browserDebugService {
     }
 
     // · write informatie message
-    log(message, module = null) {
-        console.log(utils.buildMessage(message, module, "log"))
+    log(message, modulo = null) {
+        console.log(utils.buildMessage(message, modulo, "log"))
     }
 
     // · write informatie message
-    msg(message, module = null) {
-        console.log(utils.buildMessage(message, module, "msg"))
+    msg(message, modulo = null) {
+        console.log(utils.buildMessage(message, modulo, "msg"))
     }
 
     // · write informatie message
-    info(message, module = null) {
-        console.info("%c"+utils.buildMessage(message, module, "info"), utils.stylesFor("info"))
+    info(message, modulo = null) {
+        console.info("%c"+utils.buildMessage(message, modulo, "info"), utils.stylesForBrowser("info"))
     }
 
     // · write warning message
-    warn(message, module = null) {
-        console.warn("%c"+utils.buildMessage(message, module, "warn"), utils.stylesFor("warn"))
+    warn(message, modulo = null) {
+        console.warn("%c"+utils.buildMessage(message, modulo, "warn"), utils.stylesForBrowser("warn"))
     }
 
     // · write warning message
-    error(message, module = null) {
-        console.error("%c"+utils.buildMessage(message, module, "error"), utils.stylesFor("error"))
+    error(message, modulo = null) {
+        console.error("%c"+utils.buildMessage(message, modulo, "error"), utils.stylesForBrowser("error"))
     }
 
     // · write warning message
-    fatal(message, module = null) {
-        console.error("%c"+utils.buildMessage(message, module, "error"), utils.stylesFor("fatal"))
+    fatal(message, modulo = null) {
+        console.error("%c"+utils.buildMessage(message, modulo, "error"), utils.stylesForBrowser("fatal"))
     }
 
     message(title, messages, more_information=null) {

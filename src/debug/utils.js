@@ -62,7 +62,7 @@ class Utils {
     }
 
     // · 
-    browserStylesFor(type) {
+    stylesForBrowser(type) {
 
         let lineheight="1.5;"
         let fontsize="14px;"
