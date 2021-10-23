@@ -1,3 +1,4 @@
+/*
 Lesli
 
 Copyright (c) 2021, Lesli Technologies, S. A.
@@ -26,3 +27,10 @@ Building a better future, one line of code at a time.
 
 // · ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~
 // · 
+*/
+
+
+// · 
+const graphs = {
+    blue:['#48a2de','#cde6f6','#2691d9','#acd5f0','#207bb7','#eef7fc','#1b6496','#8ac4ea','#154e75','#69b3e4']
+}

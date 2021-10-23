@@ -1,3 +1,4 @@
+/*
 Lesli
 
 Copyright (c) 2021, Lesli Technologies, S. A.
@@ -26,3 +27,30 @@ Building a better future, one line of code at a time.
 
 // · ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~
 // · 
+*/
+
+
+// · 
+const palette = require('./palette');
+const graph = require('./graphs');
+
+
+// · 
+exports.palette = palette;
+
+
+// · 
+exports.blue = (variant = 500) => palette.blue[variant];
+exports.lime = (variant = 500) => palette.lime[variant];
+exports.mint = (variant = 500) => palette.mint[variant];
+exports.grape = (variant = 500) => palette.grape[variant];
+exports.berry = (variant = 500) => palette.berry[variant];
+exports.cocoa = (variant = 500) => palette.cocoa[variant];
+exports.slate = (variant = 500) => palette.slate[variant];
+exports.black = (variant = 500) => palette.black[variant];
+exports.bubble = (variant = 500) => palette.bubble[variant];
+exports.orange = (variant = 500) => palette.orange[variant];
+exports.banana = (variant = 500) => palette.banana[variant];
+exports.silver = (variant = 500) => palette.silver[variant];
+
+

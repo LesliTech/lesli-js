@@ -8,7 +8,25 @@
 
 <hr/>
 
-Version 0.1.0  
+Version 0.1.1  
+
+
+#### Structure
+--------
+```text
+lesli-js  
+└── src/  
+     ├── debug/  
+     │    ├── browser.js  
+     │    ├── nodejs.js  
+     │    ├── utils.js  
+     │    └── index.js  
+     └── colors/  
+          ├── palette.js  
+          ├── graphs.js  
+          └── index.js  
+
+```
 
 
 #### Installation
@@ -21,9 +39,32 @@ npm install lesli-js --save
 #### Usage
 --------
 ```js
+
+// instance the Lesli JS tools
 var leslijs = require("lesli-js")
-leslijs.debug.message("Hello, test debug message")
-leslijs.colors
+
+// print pretty yet useful debug messages
+leslijs.debug.msg("Hello, test debug message")
+leslijs.debug.info("Message with 'info' style")
+leslijs.debug.hr() // just a separator line
+
+// make Lesli debug messages globally in your app
+window.debug = leslijs.debug
+
+//--
+
+// get standard colors based on the Lesli color palette
+leslijs.colors.blue()
+
+// get color with a specific variant
+leslijs.colors.blue(500)
+
+// get color directly from the palette
+leslijs.colors.pallete.blue['500']
+
+// work with the entire color palette as JSON
+leslijs.colors.pallete
+
 ```
 
 
