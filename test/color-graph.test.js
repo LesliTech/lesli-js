@@ -1,7 +1,7 @@
 /*
 Lesli
 
-Copyright (c) 2021, Lesli Technologies, S. A.
+Copyright (c) 2020, Lesli Technologies, S. A.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -16,19 +16,19 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program. If not, see <http://www.gnu.org/licenses/>.
 
-Lesli JS - JavaScript utilities for JavaScript applications
+Lesli JS debug message - Pretty debug messages for Node and web browsers
 
-Powered by LesliTech
+Powered by https://www.lesli.tech
 Building a better future, one line of code at a time.
 
-@contact  <hello@lesli.tech>
-@website  <https://lesli.tech>
 @license  GPLv3 http://www.gnu.org/licenses/gpl-3.0.en.html
+@version  0.1.0-alpha
 
 // · ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~     ~·~
 // · 
 */
 
 
-exports.debug = require("./src/debug/")
-exports.color = require("./src/color/")
+const LesliJS = require("../index")
+
+console.log(LesliJS.color.graph('blue'))

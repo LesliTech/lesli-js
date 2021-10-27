@@ -14,6 +14,7 @@
         "mocha": "9.1.3"
     },
     "scripts": {
-        "test": "mocha"
+        "test": "mocha",
+        "test:color": "clear && mocha --reporter spec 'test/color*.test.js' --exit"
     }
 }
