@@ -53,5 +53,3 @@ exports.bubble = (variant = 500) => palette.bubble[variant];
 exports.orange = (variant = 500) => palette.orange[variant];
 exports.banana = (variant = 500) => palette.banana[variant];
 exports.silver = (variant = 500) => palette.silver[variant];
-
-

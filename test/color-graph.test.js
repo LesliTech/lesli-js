@@ -29,6 +29,19 @@ Building a better future, one line of code at a time.
 */
 
 
+// · 
+const assert = require('assert');
 const LesliJS = require("../index")
 
-console.log(LesliJS.color.graph('blue'))
+
+// · 
+describe('LesliJS.color', function() {
+    describe('blue()', function() {
+        it('should return blue with variant default', () => assert.equal(LesliJS.color.blue(), '#3689e6'));
+        it('should return blue with variant 100', () => assert.equal(LesliJS.color.blue(100), '#8cd5ff'));
+        it('should return blue with variant 300', () => assert.equal(LesliJS.color.blue(300), '#64baff'));
+        it('should return blue with variant 500', () => assert.equal(LesliJS.color.blue(500), '#3689e6'));
+        it('should return blue with variant 700', () => assert.equal(LesliJS.color.blue(700), '#0d52bf'));
+        it('should return blue with variant 900', () => assert.equal(LesliJS.color.blue(900), '#002e99'));
+    });
+});

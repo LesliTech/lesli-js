@@ -1,6 +1,6 @@
 <p align="center">
 	<a href="https://www.lesli.tech" target="_blank">
-		<img width="175" alt="LesliTech logo" src="https://cdn.lesli.tech/leslitech/brand/leslitech-logo.svg" />
+		<img width="175" alt="LesliTech logo" src="./docs/lesli-js-logo.svg" />
 	</a>
 </p>
 
