@@ -30,4 +30,5 @@ Building a better future, one line of code at a time.
 */
 
 
-module.exports = require("./src/debug/browser")
+exports.node = require("./src/debug/nodejs")
+exports.browser = require("./src/debug/browser")
