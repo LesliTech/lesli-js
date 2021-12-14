@@ -35,7 +35,7 @@ let utils = require("./utils")
 
 
 // · 
-class browserDebugService {
+class BrowserDebugService {
 
     build(message, modulo, level) {
         return utils.buildMessage(message, modulo, level)
@@ -95,4 +95,4 @@ class browserDebugService {
 }
 
 // · 
-module.exports = new browserDebugService()
+module.exports = new BrowserDebugService()
