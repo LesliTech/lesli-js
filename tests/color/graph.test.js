@@ -31,7 +31,7 @@ Building a better future, one line of code at a time.
 
 // · 
 const assert = require('assert');
-const LesliJS = require("../index")
+const LesliJS = require("../../index")
 
 
 // · 
