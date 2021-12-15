@@ -34,7 +34,7 @@ Building a better future, one line of code at a time.
 require("mocha-sinon")
 const { expect } = require("chai")
 const LesliJS = require("../..")
-const utils = require("./../../src/debug/utils")
+const utils = require("../../src/debug/utils")
 
 
 describe("LesliJS.debug.browser", () => {

@@ -31,8 +31,8 @@ require("mocha-sinon")
 const { expect } = require("chai")
 const chalk = require("chalk")
 
-const LesliJS = require("../index")
-const utils = require("./../src/debug/utils")
+const LesliJS = require("../../index")
+const utils = require("../../src/debug/utils")
 
 console.debug = LesliJS.debug.nodejs
 
