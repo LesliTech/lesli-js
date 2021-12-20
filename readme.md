@@ -11,7 +11,7 @@
 Version 0.2.0 :octocat:    
 
 ## Table of Contents
-- [Application Structure](#structure)
+- [Application Structure](#application-structure)
 - [Installation](#installation)
 - [Get Started](#get-started)
 - [Usage](#usage)
@@ -23,7 +23,7 @@ Version 0.2.0 :octocat:
           - [Graph](#graph)
 - [License](#license)
 
-### Structure
+### Application Structure
 --------
 ```text
 lesli-js  
@@ -41,7 +41,7 @@ lesli-js
 ```
 
 
-### Installationsingle
+### Installation
 
 LesliJS is available in the Node Package Manager, so, you can install it through [npm](https://www.npmjs.com/package/lesli-js).
 
@@ -84,7 +84,7 @@ You can use LesliJS debug in the way for printing messages in your terminal. Tho
 
 #### Debug for Node.js
 
-See the following example of a simple message,
+See the following example of a simple message.
 
 ```js
 // Import LesliJS debug directly
@@ -131,15 +131,11 @@ debug.nodejs.error("Error message")
 debug.nodejs.fatal("Fatal error message")
 ```
 
-output
+The output should look like this.
 
+![image](https://user-images.githubusercontent.com/62123356/146724702-42f19da9-8cbc-49f6-9a74-9da6c5cf677c.png)
 
-<span style="color: white;">[12/17 18:02] [LOG] - Simple message</span>     
-<span style="color: white;">[12/17 18:02] [MSG] - Standard message</span>    
-<span style="background-color:blue; color: white;">[12/17 18:02] [INFO] - Informative message</span>   
-<span style="background-color:orange; color: white;">[12/17 18:02] [WARN] - Warning message</span>   
-<span style="background-color:red; color: white;">[12/17 18:02] [ERROR] - Error message</span>   
-<span style="background-color:red; color: white;">[12/17 18:02] [FATAL] - Error message</span>     
+--------
 
 ```js
 const { debug } = require("lesli-js")
@@ -147,7 +143,7 @@ const { debug } = require("lesli-js")
 debug.hr() // just a separator line
 ```
 
-output
+Output.
 
 ```console
 -·-     -·-     -·-     -·-     -·-     -·-     -·-     -·-     -·-     -·-
@@ -165,7 +161,7 @@ const message = debug.nodejs.build("Message", "Module", "Level")
 console.log(message)
 ```
 
-output
+Output.
 
 ```console
 [12/17 18:46] [LEVEL] (Module) - Message
@@ -183,7 +179,7 @@ console.debug.info("Informative message")
 console.debug.warn("Warning message")
 console.debug.error("Error message")
 console.debug.fatal("Fatal error message")
-```
+```    
 
 
 #### Debug for Browsers
@@ -202,14 +198,15 @@ debug.browser.msg("Simple message", "Module") // Simple message
 debug.browser.info("Informative message", "Module") // Informative message
 debug.browser.warn("Warning message", "Module") // Warning message
 debug.browser.error("Error message", "Module") // Error message
-debug.browser.fatal("Fatal message", "Module") // fatal message
+debug.browser.fatal("Fatal message", "Module") // Fatal message
 ```
 
-The output in the browser console should look like this.
+The output in the browser console should look like this.   
 
-image must go here
+![image](https://user-images.githubusercontent.com/62123356/146725103-8082abc7-e1e0-41ef-8074-c30009e4e7c1.png)
 
-These methods have the same structure as the ones of [Nodejs](#debug-for-nodejs) 
+
+These methods have the same structure as the ones of [Debug for nodejs](#debug-for-nodejs).     
 
 ```debug.browser.```<**type_of_message**>```(message: string, module?: string)```
 
@@ -238,11 +235,10 @@ debug.browser.message("Title", ["Messages1", "Message2"], "More information")
 
 The output in the browser console should look like this.
 
-image must go here
+![image](https://user-images.githubusercontent.com/62123356/146725207-94ba5029-62b4-43f4-b3f2-844f7cd3e31f.png)
 
 
-
-Method specification      
+Method specification.   
 
 ```debug.browser.message(title: string, messages: array or a simple string, more_information?: string)```
 
@@ -328,7 +324,7 @@ See the following examples.
 import { color } from "lesli-js"
 
 // Get the graph of the blue color
-// Returns an array with colors in hex code format.
+// Returns an array with colors in hex code format
 color.graph("blue")
 ```
 
@@ -336,42 +332,12 @@ All available graphs.
 
 | Graphs |
 | ------ |
-| blue |
+| blue |      
 
 
 
 
 
-
-
-```js
-
-// instance the Lesli JS tools
-var leslijs = require("lesli-js")
-
-// print pretty yet useful debug messages
-leslijs.debug.msg("Hello, test debug message")
-leslijs.debug.info("Message with 'info' style")
-leslijs.debug.hr() // just a separator line
-
-// make Lesli debug messages globally in your app
-window.debug = leslijs.debug
-
-//--
-
-// get standard colors based on the Lesli color palette
-leslijs.colors.blue()
-
-// get color with a specific variant
-leslijs.colors.blue(500)
-
-// get color directly from the palette
-leslijs.colors.pallete.blue['500']
-
-// work with the entire color palette as JSON
-leslijs.colors.pallete
-
-```
 
 
 ### License  
