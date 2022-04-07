@@ -8,7 +8,7 @@
 
 <hr/>
 
-Version 0.3.1 :octocat:    
+Version 0.4.0 :octocat:    
 
 ## Table of Contents
 - [Application Structure](#application-structure)
