@@ -43,7 +43,7 @@ class DebugMessageNodeJS {
         return utils.buildMessage(message, modulo, level)
     }
 
-    // · write informatie message
+    // · write information message
     log(message, module = null) {
 
         message = utils.buildMessage(message, module, "log")
@@ -51,7 +51,7 @@ class DebugMessageNodeJS {
 
     }
 
-    // · write informatie message
+    // · write information message
     msg(message, module = null) {
 
         message = utils.buildMessage(message, module, "msg")
@@ -60,11 +60,20 @@ class DebugMessageNodeJS {
     }
 
 
-    // · write informatie message
+    // · write information message
     info(message, module = null) {
 
         message = utils.buildMessage(message, module, "info")
         console.log(chalk.whiteBright.bgBlue(message))
+
+    }
+
+
+    // · write success message
+    success(message, module = null) {
+
+        message = utils.buildMessage(message, module, "success")
+        console.log(chalk.whiteBright.bgGreen(message))
 
     }
 

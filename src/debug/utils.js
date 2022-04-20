@@ -72,6 +72,7 @@ class Utils {
         let warn = "background-color:#f1c40f;color:#000000;"
         let error = "background-color:#e74c3c;color:#ffffff;"
         let fatal = "background-color:#c0392b;color:#fff394;"
+        let success = "background-color:##48c774;color:#000000;"
 
         let style = ""
 
@@ -80,6 +81,7 @@ class Utils {
             case "warn": style = warn; break;
             case "error": style = error; break;
             case "fatal": style = fatal; break;
+            case "success": style = success; break;
         }
 
         style += "padding:" + padding

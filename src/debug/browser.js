@@ -41,12 +41,12 @@ class BrowserDebugService {
         return utils.buildMessage(message, modulo, level)
     }
 
-    // · write informatie message
+    // · write information message
     log(message, modulo = null) {
         console.log(utils.buildMessage(message, modulo, "log"))
     }
 
-    // · write informatie message
+    // · write information message
     msg(message, modulo = null) {
         console.log(utils.buildMessage(message, modulo, "msg"))
     }
@@ -54,6 +54,11 @@ class BrowserDebugService {
     // · write informatie message
     info(message, modulo = null) {
         console.info("%c"+utils.buildMessage(message, modulo, "info"), utils.stylesForBrowser("info"))
+    }
+
+    // · write success message
+    success(message, modulo = null) {
+        console.log(utils.buildMessage(message, modulo, "msg"))
     }
 
     // · write warning message
