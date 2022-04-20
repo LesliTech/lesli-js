@@ -4,7 +4,7 @@
     "homepage": "https://lesli.dev",
     "author": "The Lesli Development Team <hello@lesli.tech>",
     "license": "GPLv3",
-    "version": "0.4.0",
+    "version": "0.4.1",
     "main": "index.js",
     "dependencies": {
         "chalk": "4.1.2",
